@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Organization System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎟️ Tech Conference 2026</h1>
+    <p class="event-info">15 March 2026 | 10:00 AM</p>
+
+    <div id="timer" class="timer"></div>
+    <hr>
+
+    <!-- REGISTRATION FORM -->
+    <h2>Event Registration</h2>
+    <form id="registerForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <button type="submit">Proceed to Seat Selection</button>
+    </form>
+
+    <!-- SEAT SELECTION -->
+    <div id="seatSection" class="hidden">
+        <h2>Select Your Seat</h2>
+        <div id="seats" class="seats"></div>
+        <button id="confirmBtn">Confirm Booking</button>
+    </div>
+
+    <!-- CONFIRMATION -->
+    <div id="confirmation" class="confirmation"></div>
+</div>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>

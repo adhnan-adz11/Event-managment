@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f6fc;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.event-info {
+    text-align: center;
+    color: #555;
+}
+
+hr {
+    width: 70px;
+    border: 3px solid #3498db;
+    margin: 20px auto;
+}
+
+/* FORM */
+form {
+    display: grid;
+    gap: 15px;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 12px;
+    font-size: 16px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #217dbb;
+}
+
+/* TIMER */
+.timer {
+    text-align: center;
+    font-size: 22px;
+    color: #e67e22;
+    margin-bottom: 15px;
+}
+
+/* SEATS */
+.seats {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.seat {
+    padding: 12px;
+    text-align: center;
+    border-radius: 6px;
+    background: #e0e0e0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.seat:hover {
+    background: #d0d0d0;
+}
+
+.seat.selected {
+    background: #3498db;
+    color: white;
+}
+
+.seat.booked {
+    background: #e74c3c;
+    color: white;
+    cursor: not-allowed;
+}
+
+/* CONFIRMATION */
+.confirmation {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* UTIL */
+.hidden {
+    display: none;
+}
